@@ -26,7 +26,7 @@ class MathUtils {
   /// 10.225, precision: 2  => 0.22
   static double getDecimalPart(
     double decimal, {
-    int precision,
+    int? precision,
   }) {
     final mult = math.pow(10, precision ?? defaultPrecision);
     return ((decimal % 1) * mult).roundToDouble() / mult;
